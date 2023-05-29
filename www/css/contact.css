@@ -1,0 +1,97 @@
+.contact {
+    background-color: #2b2b2c;
+    color: white;
+}
+
+.contact__contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 20px;
+    justify-content: center;
+    height: fit-content;
+  }
+  
+.contact__contacts__proj-button {
+    background-color: white; /* Green */
+    border: none;
+    color : #2f3640;
+    height: max-content;
+    border-radius: 2px;
+    display: flex;
+    align-self: center;
+}
+
+.contact__contacts__proj-button:hover {
+    background-color: #fda33c; /* Green */
+}
+
+span > i {
+    padding-right: 5px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 8;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal__proj-form {
+    position: relative;
+    top: 40%;
+    left: 25%;
+    background-color: #2b2b2c;
+    border-radius: 10px;
+    padding: 20px;
+    width: 50%;
+    height: 20%;
+}
+
+.modal__proj-form div {
+    width: 100%;
+}
+
+.modal__proj-formdiv label {
+    width: 25%;
+}
+
+/* CSS pro paticku */
+
+.modal__proj-form div input {
+    width: 75%;
+}
+
+.button--create {
+    position: absolute;
+    bottom: 10px;
+    left: 75px;
+    background-color: #46eb37;
+}
+
+.button--close {
+    position: absolute;
+    bottom: 10px;
+    background-color: red;
+}
+
+.button {
+    border-radius: 2px;
+    border: none;
+}
+
+
+span:hover {
+    color: #fda33c;
+}
+
+span:hover a{
+    color: #fda33c;
+}

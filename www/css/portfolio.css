@@ -1,0 +1,52 @@
+/* CSS pro sekci portfolio */
+
+.portfolio__slider {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    width: 100%;
+    justify-content: center;
+}
+  
+.portfolio__slider__proj {
+    background-color: white;
+    color: rgb(114, 111, 111);
+  
+    height: 100%;
+    width: 20%;
+    padding: 20px;
+  
+    border-radius: 10px;
+}
+  
+.portfolio__slider__proj h2 {
+    color: #fda33c;  
+}
+  
+.proj__delete {
+    color: #fda33c;  
+}
+  
+.portfolio__arrow--next {
+    position: relative;
+    float: right;
+}
+  
+.portfolio__arrow--prev {
+    position: relative;
+    float: left;
+}
+  
+.portfolio__arrows {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    column-gap: 20px;
+}
+  
+.portfolio__arrow {
+    padding: 5px;
+}
+  

@@ -1,0 +1,99 @@
+/* CSS pro hlavicku */
+
+.header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    flex-direction: row;
+    background-color: transparent;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.header__hamburger-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header__search {
+    width: fit-content;
+}
+
+.header__search__form {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.header__search__form:hover > #searchInput {
+    width: 150px;
+    padding: 0 6px;
+}
+
+.header__search__form:hover > #searchButton {
+    background: rgb(199, 197, 197);
+    color : #2f3640;
+}
+
+#searchButton {
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+#searchInput {
+    border:none;
+    outline:none;
+    float:left;
+    padding: 0;
+    color: black;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+    background-color: white;
+    border-radius: 5px;
+
+}
+
+.header__nav {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+.header__nav__menu {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.header__nav__menu div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__nav__menu div a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.header__nav__menu a:hover {
+    background-color: #4e4e50;
+}

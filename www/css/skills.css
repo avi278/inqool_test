@@ -1,0 +1,53 @@
+/* CSS pro sekci skills */
+
+.skills {
+    background: url("../img/nature.png");
+}
+  
+.skills__content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.skills__content__tab__content {
+    width: auto;
+}
+  
+.skills__tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: fit-content;
+}
+    
+.skills__tab__tablinks {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    width: auto;
+}
+    
+.skills__tab__tablinks:hover {
+    background-color: #f8b05f;
+} 
+    
+.skills__tab__tablinks.active {
+    background-color: #ccc;
+}
+    
+.skill__tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+}
+  
+.skills h3 {
+    text-decoration: underline #46eb37;
+}

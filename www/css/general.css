@@ -1,0 +1,38 @@
+/* CSS pro celou stranku */
+
+html {
+    scroll-behavior: smooth;
+    width: 100vw;
+}
+
+body {
+    background-color: rgb(114, 111, 111);
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+body a:link{
+    text-decoration: none;
+}
+
+a {
+    color: white;
+}
+
+.page h1 {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+

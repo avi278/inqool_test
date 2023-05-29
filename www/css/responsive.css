@@ -1,0 +1,472 @@
+/* CSS pro zajisteni responzivniho designu */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    /*      PAGE        */
+    body {
+        font-size: 14px;
+    }
+
+    .slider__text h1 {
+        font-size: 30px;
+    }
+    
+    .page h1 {
+        font-size: 20px;
+    }
+
+    .portfolio, .skills, .contact {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-left: 100px;
+        padding-right: 100px;
+      }
+
+
+    /*      NAVIGATION      */ 
+    .header {
+        height: auto;
+        width: 100%;
+        font-size: 25px;
+        flex-direction: column;
+        min-height: 50px;
+    }
+    
+    
+    .header__search {
+        column-gap: 10px;
+    }
+    
+    .header__search:hover > #searchInput {
+        width: 150px;
+        padding: 0 6px;
+    }
+    
+    #searchButton {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    
+    #searchInput {
+        padding: 0;
+        font-size: 16px;
+        line-height: 40px;
+        width: 0px;    
+    }
+    
+    .header__nav {
+        height: auto;
+    }
+    
+    .header__nav__menu div {
+        height: auto;
+        flex-direction: column;
+    }
+    
+    .header__nav__menu div a {
+        height: auto;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .header__hamburger-menu {
+        display: none;
+    }
+
+    .header__hamburger-menu.show {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header__hamburger {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    /* SLIDER */
+    .slider__text{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    /* SKILLS */
+    .skills__tab {
+        display: none;
+    }
+    
+    .skills__select {
+        display: block;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px){
+
+    /*      PAGE        */
+    body {
+        font-size: 16px;
+    }
+
+    .slider__text h1 {
+        font-size: 35px;
+    }
+    
+    .page h1 {
+        font-size: 25px;
+    }
+
+    .portfolio, .skills, .contact {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 110px;
+        padding-right: 110px;
+      }
+
+
+    /*      NAVIGATION      */ 
+    .header {
+        height: auto;
+        column-gap: 30px;
+        width: 100%;
+        font-size: 25px;
+        flex-direction: column;
+        min-height: 50px;
+    }
+    
+    
+    .header__search {
+        column-gap: 10px;
+    }
+    
+    .header__search:hover > #searchInput {
+        width: 150px;
+        padding: 0 6px;
+    }
+    
+    #searchButton {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    
+    #searchInput {
+        padding: 0;
+        font-size: 16px;
+        line-height: 40px;
+        width: 0px;    
+    }
+    
+    .header__nav {
+        height: auto;
+    }
+    
+    .header__nav__menu div {
+        height: auto;
+        flex-direction: column;
+    }
+    
+    .header__nav__menu div a {
+        height: auto;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .header__hamburger-menu {
+        display: none;
+    }
+
+    .header__hamburger-menu.show {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header__hamburger {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    /* SLIDER */
+    .slider__text{
+        padding-left: 125px;
+        padding-right: 125px;
+    }
+
+    /* SKILLS */
+    .skills__tab {
+        display: none;
+    }
+
+    .skills__select {
+        display: block;
+    }
+
+}
+ 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px){
+
+    /*      PAGE        */
+    body {
+        font-size: 18px;
+    }
+
+    .slider__text h1 {
+        font-size: 40px;
+    }
+    
+    .page h1 {
+        font-size: 30px;
+    }
+
+    .portfolio, .skills, .contact {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        padding-left: 125px;
+        padding-right: 125px;
+      }
+
+
+    /*      NAVIGATION      */ 
+    .header {
+        height: 65px;
+        column-gap: 30px;
+        width: 100%;
+        font-size: 25px;
+    }
+    
+    
+    .header__search {
+        column-gap: 10px;
+    }
+    
+    .header__search:hover > #searchInput {
+        width: 150px;
+        padding: 0 6px;
+    }
+    
+    #searchButton {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    
+    #searchInput {
+        padding: 0;
+        font-size: 16px;
+        line-height: 40px;
+        width: 0px;    
+    }
+    
+    .header__nav {
+        height: 65px;
+    }
+    
+    .header__nav__menu div {
+        height: 65px;
+    }
+    
+    .header__nav__menu div a {
+        height: 65px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .header__hamburger {
+        display: none;
+    }
+
+
+    /* SLIDER */
+    .slider__text{
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    /* SKILLS */
+    .skills__select {
+        display: none;
+    }
+}
+ 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+
+    /*      PAGE        */
+    body {
+        font-size: 19px;
+    }
+
+    .slider__text h1 {
+        font-size: 45px;
+    }
+    
+    .page h1 {
+        font-size: 30px;
+    }
+
+    .portfolio, .skills, .contact {
+        padding-top: 75px;
+        padding-bottom: 75px;
+        padding-left: 150px;
+        padding-right: 150px;
+      }
+
+
+    /*      NAVIGATION      */ 
+    .header {
+        height: 100px;
+        column-gap: 40px;
+        width: 100%;
+        font-size: 30px;
+    }
+    
+    
+    .header__search {
+        column-gap: 10px;
+    }
+    
+    .header__search:hover > #searchInput {
+        width: 150px;
+        padding: 0 6px;
+    }
+    
+    #searchButton {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    
+    #searchInput {
+        padding: 0;
+        font-size: 16px;
+        line-height: 40px;
+        width: 0px;    
+    }
+    
+    .header__nav {
+        height: 100px;
+    }
+    
+    .header__nav__menu div {
+        height: 100px;
+    }
+    
+    .header__nav__menu div a {
+        height: 100px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .header__hamburger {
+        display: none;
+    }
+
+
+    /* SLIDER */
+    .slider__text{
+        padding-left: 175px;
+        padding-right: 175px;
+    }
+
+    /* SKILLS */
+    .skills__select {
+        display: none;
+    }
+
+
+
+}
+ 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    /*      PAGE        */
+    body {
+        font-size: 20px;
+    }
+
+    .slider__text h1 {
+        font-size: 50px;
+    }
+
+    .page h1 {
+        font-size: 35px;
+    }
+
+    .portfolio, .skills, .contact {
+        padding-top: 75px;
+        padding-bottom: 75px;
+        padding-left: 200px;
+        padding-right: 200px;
+      }
+
+
+    /*      NAVIGATION      */ 
+    .header {
+        height: 100px;
+        column-gap: 40px;
+        width: 100%;
+        font-size: 30px;
+    }
+    
+    
+    .header__search {
+        column-gap: 10px;
+    }
+    
+    .header__search:hover > #searchInput {
+        width: 150px;
+        padding: 0 6px;
+    }
+    
+    #searchButton {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    
+    #searchInput {
+        padding: 0;
+        font-size: 16px;
+        line-height: 40px;
+        width: 0px;    
+    }
+    
+    .header__nav {
+        height: 100px;
+    }
+    
+    .header__nav__menu div {
+        height: 100px;
+    }
+    
+    .header__nav__menu div a {
+        height: 100px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .header__hamburger {
+        display: none;
+    }
+
+
+
+    /* SLIDER */
+    .slider__text{
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    /* SKILLS */
+    .skills__select {
+        display: none;
+    }
+
+} 

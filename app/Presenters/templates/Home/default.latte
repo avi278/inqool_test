@@ -1,0 +1,159 @@
+{block content}
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+    <article>
+        <section class="slider">
+            <div class="slider__content">
+                <div class="slider__content__slide slider__content--slider1">
+                    <div class="slider__text">
+                        <h1>PORTFOLIO</h1>
+                        <button class="slider__start" type="button"  onclick="openPage()">Get Started</button>
+                    </div>
+                </div>
+                <div class="slider__content__slide slider__content--slider2">
+                    <div class="slider__text">
+                        <h1>SKILLS</h1>
+                        <button class="slider__start" type="button"  onclick="openPage()">Get Started</button>
+                    </div>
+                </div>
+                <div class="slider__content__slide slider__content--slider3">
+                    <div class="slider__text">
+                        <h1>CONTACTS</h1>
+                        <button class="slider__start" type="button"  onclick="openPage()">Get Started</button>
+                    </div>
+                </div>
+                <div class="slider__content__slide slider__content--slider1">
+                    <div class="slider__text">
+                        <h1>PORTFOLIO</h1>
+                        <button class="slider__start" type="button"  onclick="openPage()">Get Started</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <section class="page">
+            <section class="portfolio">
+                    <h1>PORTFOLIO</h1>
+                    {snippet projslider}
+                        <div class="portfolio__arrows">
+                            {if $_SESSION['num'] != 0}<a class="ajax portfolio__arrow portfolio__arrow--prev" data-naja-history="off" n:href="Prev!">❮</a>{/if}
+                            {if $_SESSION['num']+4 < $num}<a class="ajax portfolio__arrow portfolio__arrow--next" data-naja-history="off" n:href="Next!">❯</a>{/if}
+                        </div>
+                    
+                        <div class="portfolio__slider" id="proj-slider">
+                            {foreach $project as $proj}
+                                <div class="portfolio__slider__proj">
+                                    <h2>{$proj->proj_name}</h2>
+                                    <p class="proj__text">{$proj->proj_text}</p>
+                                    <p class="proj__date">{$proj->proj_date}</p>
+                                    {if $proj->proj_label == 1}<p class="proj__label">IT</p>{/if}
+                                    {if $proj->proj_label == 2}<p class="proj__label">Art</p>{/if}
+                                    {if $proj->proj_label == 3}<p class="proj__label">Free time</p>{/if}
+                                    {if $proj->proj_label == 4}<p class="proj__label">Games</p>{/if}
+                                    <a class="ajax proj__delete" data-naja-history="off" n:href="Delete! $proj->proj_id">Delete</a>
+                                </div>
+                            {/foreach}
+                        </div>
+                    {/snippet}
+            </section>
+            <section class="skills" id="skills">
+                    <h1>SKILLS</h1>
+                        <div class="skills__content">
+                            <div class="skills__content__tab__content">
+                                <div class="skills__tab">
+                                    <button class="skills__tab__tablinks" onclick="openSkill(event, 'London')">London</button>
+                                    <button class="skills__tab__tablinks" onclick="openSkill(event, 'Paris')">Paris</button>
+                                    <button class="skills__tab__tablinks" onclick="openSkill(event, 'Tokyo')">Tokyo</button>
+                                    <button class="skills__tab__tablinks" onclick="openSkill(event, 'Tokyo')">Tokyo</button>
+                                    <button class="skills__tab__tablinks" onclick="openSkill(event, 'Tokyo')">Tokyo</button>
+                                    <button class="skills__tab__tablinks" onclick="openSkill(event, 'Tokyo')">Tokyo</button>
+                                    <button class="skills__tab__tablinks" onclick="openSkill(event, 'Tokyo')">Tokyo</button>
+                                    <button class="skills__tab__tablinks" onclick="openSkill(event, 'Tokyo')">Tokyo</button>
+                                    <button class="skills__tab__tablinks" onclick="openSkill(event, 'Tokyo')">Tokyo</button>
+                                    <button class="skills__tab__tablinks" onclick="openSkill(event, 'Tokyo')">Tokyo</button>
+                                    <button class="skills__tab__tablinks" onclick="openSkill(event, 'Tokyo')">Tokyo</button>
+                                </div>
+                                <div class="skills__select">
+                                    <select>
+                                        <option value="0" >Select skill:</option>
+                                        <option value="1" onclick="openSkill(event, 'London')">London</option>
+                                        <option value="2" onclick="openSkill(event, 'Paris')">Paris</option>
+                                        <option value="3" onclick="openSkill(event, 'Tokyo')">Tokyo</option>
+                                        <option value="4" onclick="openSkill(event, 'Tokyo')">Tokyo</option>
+                                        <option value="5" onclick="openSkill(event, 'Tokyo')">Tokyo</option>
+                                        <option value="6" onclick="openSkill(event, 'Tokyo')">Tokyo</option>
+                                        <option value="7" onclick="openSkill(event, 'Tokyo')">Tokyo</option>
+                                        <option value="8" onclick="openSkill(event, 'Tokyo')">Tokyo</option>
+                                        <option value="9" onclick="openSkill(event, 'Tokyo')">Tokyo</option>
+                                        <option value="10" onclick="openSkill(event, 'Tokyo')">Tokyo</option>
+                                        <option value="11" onclick="openSkill(event, 'Tokyo')">Tokyo</option>
+                                        <option value="12" onclick="openSkill(event, 'Tokyo')">Tokyo</option>
+                                    </select>
+                                </div>
+                                <div id="London" class="skill__tabcontent skill__tabcontent--London">
+                                    <h3>London</h3>
+                                    <p>London is the capital city of England.</p>
+                                </div>
+                                
+                                <div id="Paris" class="skill__tabcontent skill__tabcontent--Paris">
+                                    <h3>Paris</h3>
+                                    <p>Paris is the capital of France.</p> 
+                                </div>
+                                
+                                <div id="Tokyo" class="skill__tabcontent skill__tabcontent--Tokyo">
+                                    <h3>Tokyo</h3>
+                                    <p>Tokyo is the capital of Japan.</p>
+                                </div>
+                            <div>
+                        </div>
+                    </div>
+            </section>
+            <footer class="contact" id="contact">
+                    <h1>
+                        CONTACTS
+                    </h1>
+                    <div class="contact__contacts">
+                        <span><i class="fas fa-phone-square-alt"></i>(+420) 731 849 021</span>
+                        <span class="mail"><i class="fas fa-envelope-square"></i><a href="mailto:xutika00@fit.vutbr.cz">xutika00@fit.vutbr.cz</a></span>
+                        <span class="facebook"><a href="https://www.youtube.com/watch?v=LYwaBpL6njk"><i class="fab fa-facebook"></i></a></span>
+                        <span class="instagram"><a href="https://www.youtube.com/watch?v=ssGknZaa23M"><i class="fab fa-instagram"></i></a></span>
+                        {snippet addform}
+                        <button class="contact__contacts__proj-button" onclick="openForm()">Add new project</button>
+                        <div class="modal">
+                            <div class="modal__proj-form">
+                                <form class="ajax" data-naja-history="off" n:name=projInsertForm>
+                                    <div>
+                                        <label for="in1" n:name=name>Name</label>
+                                        <input id="in1" n:name=name >
+                                    </div>               
+                                    <div>
+                                        <label for="in2" n:name=text>Desription</label>
+                                        <input  id="in2" n:name=text>
+                                    </div>
+                                    <div>
+                                        <label for="in3" n:name=label>Label</label>
+                                        <select n:name=label id="in3">
+                                                <option value="1">IT</option>
+                                                <option value="2">Art</option>
+                                                <option value="3">Free time</option>
+                                                <option value="4">Games</option>
+                                        </select>                            
+                                    </div>
+                                    <input class="button button--create" type="submit" value="Create" n:name=send>
+                                    <button class="button button--close" type="button"  onclick="closeForm()">Close</button>
+                                </form>
+                            </div>
+                        </div>
+                        {/snippet}   
+                    </div>
+
+            </footer>
+        </section>
+    </article>
+
+
+{/block}
+
+
